@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import Button from "./Button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, BadgeDollarSign } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = () => {
@@ -20,10 +20,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className='fixed top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-50 backdrop-blur shadow-lg px-6 py-3 transition-all'>
+    <header className='absolute top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-50 backdrop-blur shadow-lg px-6 py-3 transition-all'>
       <div className='flex items-center justify-between'>
         {/* logo */}
-        <div className='text-xl font-bold tracking-tight text-primary-500'>
+        <div className='flex justify-start items-center gap-2 text-xl font-bold tracking-tight text-primary-500'>
+          <BadgeDollarSign size={24} />
           SoftSell
         </div>
 

@@ -4,14 +4,16 @@ const HowItWorks = () => {
   return (
     <section id='how-it-works' className='py-20 bg-background-50'>
       <div className='max-w-6xl mx-auto text-center px-6'>
-        <h2 className='text-3xl md:text-5xl font-semibold text-text-900 mb-12'>
-          How It Works
-        </h2>
+        <h2 className='text-4xl font-bold text-text-900 mb-4'>How It Works</h2>
+        <p className='text-lg text-gray-600 mb-14 max-w-2xl mx-auto'>
+          A simple 3-step process to turn your unused software licenses into
+          cash.
+        </p>
 
         {/* steps */}
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
           {/* step 1*/}
-          <div className='flex flex-col items-center text-center bg-secondary-50 text-gray-900 shadow-xl rounded-2xl p-8 transform transition-transform hover:scale-105'>
+          <div className='flex flex-col items-center text-center bg-secondary-50 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
             <div className='text-accent-500 mb-6 transition-transform hover:scale-110'>
               <Upload size={48} />
             </div>
@@ -23,7 +25,7 @@ const HowItWorks = () => {
           </div>
 
           {/* step 2 */}
-          <div className='flex flex-col items-center text-center bg-secondary-50 text-gray-900 shadow-xl rounded-2xl p-8 transform transition-transform hover:scale-105'>
+          <div className='flex flex-col items-center text-center bg-secondary-50 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
             <div className='text-accent-500 mb-6 transition-transform hover:scale-110'>
               <DollarSign size={48} />
             </div>
@@ -35,7 +37,7 @@ const HowItWorks = () => {
           </div>
 
           {/* step 3 */}
-          <div className='flex flex-col items-center text-center bg-secondary-50 text-gray-900 shadow-xl rounded-2xl p-8 transform transition-transform hover:scale-105'>
+          <div className='flex flex-col items-center text-center bg-secondary-50 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
             <div className='text-accent-500 mb-6 transition-transform hover:scale-110'>
               <CheckCircle size={48} />
             </div>

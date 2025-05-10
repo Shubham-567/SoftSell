@@ -14,12 +14,12 @@ const HeroSection = () => {
 
       <div className='relative z-10 flex h-full flex-col items-center justify-center px-4'>
         <div className='max-w-3xl text-center'>
-          <h1 className='mb-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl lg:text-7xl leading-22'>
+          <h1 className='mb-6 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-tight'>
             Turn Unused Software Into
             <span className='text-primary-500'> Cash</span>
           </h1>
 
-          <p className='mx-auto mb-10 max-w-2xl text-lg text-slate-700'>
+          <p className='mx-auto mb-10 max-w-3xl text-lg text-slate-700'>
             SoftSell helps businesses resell their unused software licenses
             quickly and securely. Maximize the value of software you no longer
             need.

@@ -1,0 +1,79 @@
+import React from "react";
+import {
+  Facebook,
+  Twitter,
+  Linkedin,
+  Mail,
+  BadgeDollarSign,
+} from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className='bg-background-100 px-4 py-12'>
+      <div className='bg-background-50 border border-gray-200 text-secondary-900 px-6 py-12 rounded-3xl shadow-xl max-w-7xl mx-auto'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+          {/* logo */}
+          <div>
+            <h3 className='flex justify-start items-center gap-2  text-2xl text-primary-500 font-bold mb-4'>
+              <BadgeDollarSign size={24} />
+              SoftSell
+            </h3>
+            <p className='text-sm text-gray-600 leading-relaxed'>
+              Turning unused software into business value. Resell your licenses
+              securely and quickly.
+            </p>
+          </div>
+
+          {/* quick links */}
+          <div>
+            <h4 className='text-xl font-semibold mb-4'>Quick Links</h4>
+            <ul className='space-y-2 text-sm text-gray-700'>
+              <li>
+                <a
+                  href='#how-it-works'
+                  className='hover:text-primary-500 transition-colors'>
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#why-us'
+                  className='hover:text-primary-500 transition-colors'>
+                  Why Choose Us
+                </a>
+              </li>
+              <li>
+                <a
+                  href='#contact'
+                  className='hover:text-primary-500 transition-colors'>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* social icons */}
+          <div>
+            <h4 className='text-xl font-semibold mb-4'>Follow Us</h4>
+            <div className='flex gap-4'>
+              {[Facebook, Twitter, Linkedin, Mail].map((Icon, idx) => (
+                <a
+                  key={idx}
+                  href='#'
+                  className='p-2 bg-gray-200 rounded-full hover:bg-accent-500 hover:text-white transition-colors'>
+                  <Icon size={20} />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className='mt-10 text-center text-sm text-gray-500'>
+          &copy; {new Date().getFullYear()} SoftSell. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
