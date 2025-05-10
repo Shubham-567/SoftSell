@@ -4,10 +4,12 @@ const Testimonials = () => {
   return (
     <section
       id='testimonials'
-      className='py-20 bg-background-100 relative overflow-hidden'>
+      className='py-12 md:py-20 bg-background-100 relative overflow-hidden'>
       <div className='relative z-10 max-w-6xl mx-auto px-6 text-center'>
-        <h2 className='text-4xl font-bold text-text-900 mb-4'>Customer Love</h2>
-        <p className='text-lg text-gray-600 mb-14 max-w-2xl mx-auto'>
+        <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-text-900 mb-4'>
+          Customer Love
+        </h2>
+        <p className='text-base sm:text-lg md:text-xl text-gray-600 mb-14 max-w-2xl mx-auto'>
           Hear from real clients who’ve successfully sold their unused software
           licenses.
         </p>
@@ -22,12 +24,12 @@ const Testimonials = () => {
               licenses. The process was fast, transparent, and hassle-free.”
             </p>
             <div className='flex items-center gap-4'>
-              <div className='w-10 h-10 rounded-full bg-primary-500 text-text-50 flex items-center justify-center font-semibold'>
+              <div className='w-10 h-10 rounded-full bg-secondary-500 text-text-50 flex items-center justify-center font-semibold'>
                 JM
               </div>
               <div>
                 <p className='font-semibold text-gray-800'>Jane Mitchell</p>
-                <p className='text-sm text-gray-500'>
+                <p className='text-sm sm:text-base text-gray-500'>
                   IT Director, TechNova Inc.
                 </p>
               </div>
@@ -38,17 +40,18 @@ const Testimonials = () => {
             <div className='mb-4 text-accent-500'>
               <Quote size={32} />
             </div>
-            <p className='text-gray-700 mb-6 text-base leading-relaxed'>
+            <p className='text-sm sm:text-base md:text-lg text-gray-700 mb-6 leading-relaxed'>
               “A seamless experience from start to finish. We recovered value
               from licenses we thought were useless. Highly recommended!”
             </p>
+
             <div className='flex items-center gap-4'>
-              <div className='w-10 h-10 rounded-full bg-accent-500 text-text-50 flex items-center justify-center font-semibold'>
+              <div className='w-10 h-10 rounded-full bg-secondary-500 text-text-50 flex items-center justify-center font-semibold'>
                 CR
               </div>
               <div>
                 <p className='font-semibold text-gray-800'>Carlos Rivera</p>
-                <p className='text-sm text-gray-500'>
+                <p className='text-sm sm:text-base text-gray-500'>
                   Operations Lead, ByteCraft Solutions
                 </p>
               </div>

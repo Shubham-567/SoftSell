@@ -41,7 +41,7 @@ const Navbar = () => {
           </a>
         </nav>
 
-        {/* CTA */}
+        {/* CTA - desktop */}
         <div className='hidden md:block'>
           <a href='#contact'>
             <Button variant='primary'>Sell Now</Button>
@@ -57,7 +57,7 @@ const Navbar = () => {
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
 
-          {/* dropdown menu */}
+          {/* dropdown menu - mobile */}
           <AnimatePresence>
             {menuOpen && (
               <motion.div

@@ -9,16 +9,16 @@ import {
 
 const Footer = () => {
   return (
-    <footer className='bg-background-100 px-4 py-12'>
-      <div className='bg-background-50 border border-gray-200 text-secondary-900 px-6 py-12 rounded-3xl shadow-xl max-w-7xl mx-auto'>
+    <footer className='bg-background-50 px-4 py-12'>
+      <div className='bg-secondary-50 border border-gray-200 text-secondary-900 px-8 py-12 rounded-3xl shadow-xl max-w-7xl mx-auto'>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
           {/* logo */}
           <div>
-            <h3 className='flex justify-start items-center gap-2  text-2xl text-primary-500 font-bold mb-4'>
+            <h3 className='flex justify-start items-center gap-2 text-2xl sm:text-3xl text-primary-500 font-bold mb-4'>
               <BadgeDollarSign size={24} />
               SoftSell
             </h3>
-            <p className='text-sm text-gray-600 leading-relaxed'>
+            <p className='text-sm sm:text-base text-gray-600 leading-relaxed'>
               Turning unused software into business value. Resell your licenses
               securely and quickly.
             </p>
@@ -26,8 +26,10 @@ const Footer = () => {
 
           {/* quick links */}
           <div>
-            <h4 className='text-xl font-semibold mb-4'>Quick Links</h4>
-            <ul className='space-y-2 text-sm text-gray-700'>
+            <h4 className='text-lg sm:text-xl font-semibold mb-4'>
+              Quick Links
+            </h4>
+            <ul className='space-y-2 text-sm sm:text-base text-gray-700'>
               <li>
                 <a
                   href='#how-it-works'
@@ -54,7 +56,7 @@ const Footer = () => {
 
           {/* social icons */}
           <div>
-            <h4 className='text-xl font-semibold mb-4'>Follow Us</h4>
+            <h4 className='text-lg sm:text-xl font-semibold mb-4'>Follow Us</h4>
             <div className='flex gap-4'>
               {[Facebook, Twitter, Linkedin, Mail].map((Icon, idx) => (
                 <a
@@ -68,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className='mt-10 text-center text-sm text-gray-500'>
+        <div className='mt-10 text-center text-xs sm:text-sm text-gray-500'>
           &copy; {new Date().getFullYear()} SoftSell. All rights reserved.
         </div>
       </div>

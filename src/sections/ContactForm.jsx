@@ -53,19 +53,19 @@ const ContactForm = () => {
   };
 
   return (
-    <section id='contact' className='py-24 bg-background-50'>
+    <section id='contact' className='py-12 md:py-24 bg-background-50'>
       <div className='max-w-6xl mx-auto px-6'>
-        <h2 className='text-4xl font-bold text-text-900 text-center mb-3'>
+        <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-text-900 text-center mb-3'>
           Get in Touch
         </h2>
 
-        <p className='text-lg text-gray-600 text-center mb-12'>
+        <p className='text-base sm:text-lg md:text-xl text-gray-600 text-center mb-12'>
           Fill out the form and our team will get back to you shortly.
         </p>
 
         <form
           onSubmit={handleSubmit}
-          className='bg-background-100 p-8 md:p-10 rounded-3xl shadow-2xl grid grid-cols-1 md:grid-cols-2 gap-8'>
+          className='bg-secondary-50 p-8 md:p-10 rounded-3xl shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8'>
           {/* left */}
 
           <div className='flex flex-col gap-5'>
@@ -74,20 +74,29 @@ const ContactForm = () => {
                 <div className='flex justify-between items-center mb-1'>
                   <label
                     htmlFor={field}
-                    className='block text-sm font-medium text-gray-700 mb-1 capitalize'>
+                    className='block text-sm sm:text-base font-medium text-gray-700 mb-1 capitalize'>
                     {field} <span className='text-red-500'>*</span>
                   </label>
 
                   {errors[field] && (
-                    <p className='text-sm text-red-500 mt-1'>{errors[field]}</p>
+                    <p className='text-xs sm:text-sm text-red-500 mt-1'>
+                      {errors[field]}
+                    </p>
                   )}
                 </div>
 
                 <input
                   id={field}
                   type={field === "email" ? "email" : "text"}
-                  className='w-full border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                  className='w-full bg-background-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                   value={formData[field]}
+                  placeholder={
+                    field === "name"
+                      ? "Enter your full name"
+                      : field === "email"
+                      ? "Enter your email address"
+                      : field === "company" && "Enter your company here"
+                  }
                   onChange={(e) =>
                     setFormData({ ...formData, [field]: e.target.value })
                   }
@@ -102,14 +111,14 @@ const ContactForm = () => {
                   className='block text-sm border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'></label>
 
                 {errors.licenseType && (
-                  <p className='text-sm text-red-500 mt-1'>
+                  <p className='text-xs sm:text-sm text-red-500 mt-1'>
                     {errors.licenseType}
                   </p>
                 )}
               </div>
               <select
                 id='license-type'
-                className='w-full border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                className='w-full bg-background-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                 value={formData.licenseType}
                 onChange={(e) =>
                   setFormData({ ...formData, licenseType: e.target.value })
@@ -133,15 +142,18 @@ const ContactForm = () => {
                   Message <span className='text-red-500'>*</span>
                 </label>
                 {errors.message && (
-                  <p className='text-sm text-red-500 mt-1'>{errors.message}</p>
+                  <p className='text-xs sm:text-sm text-red-500 mt-1'>
+                    {errors.message}
+                  </p>
                 )}
               </div>
 
               <textarea
                 id='message'
                 rows={9}
-                className='w-full border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                className='text-sm sm:text-base w-full bg-background-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                 value={formData.message}
+                placeholder='Write your message here...'
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
                 }
@@ -149,7 +161,10 @@ const ContactForm = () => {
             </div>
 
             <div className='mt-6'>
-              <Button type='submit' variant='primary' className='w-full'>
+              <Button
+                type='submit'
+                variant='primary'
+                className='w-full text-base sm:text-lg'>
                 Send Message
               </Button>
             </div>
