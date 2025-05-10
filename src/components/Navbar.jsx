@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className='fixed top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-white/90 backdrop-blur shadow-lg px-6 py-3 transition-all'>
+    <header className='fixed top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-50 backdrop-blur shadow-lg px-6 py-3 transition-all'>
       <div className='flex items-center justify-between'>
         {/* logo */}
         <div className='text-xl font-bold tracking-tight text-primary-500'>
@@ -51,7 +51,7 @@ const Navbar = () => {
         <div className='md:hidden relative' ref={menuRef}>
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className='text-gray-700 hover:text-[#3f34cb]'
+            className='text-gray-700 hover:text-primary-500'
             aria-label='Toggle Menu'>
             {menuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -64,22 +64,22 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 8 }}
                 exit={{ opacity: 0, y: -10 }}
                 transition={{ duration: 0.2 }}
-                className='absolute right-0 mt-3 w-56 rounded-xl bg-white shadow-lg p-4 flex flex-col space-y-3 text-sm font-medium text-gray-800 z-50'>
+                className='absolute right-0 mt-3 w-56 rounded-xl bg-background-50 shadow-lg p-4 flex flex-col space-y-3 text-sm font-medium text-gray-800 z-50'>
                 <a
                   href='#how-it-works'
-                  className='hover:text-[#3f34cb] transition'
+                  className='hover:text-primary-500 transition'
                   onClick={() => setMenuOpen(false)}>
                   How It Works
                 </a>
                 <a
                   href='#why-us'
-                  className='hover:text-[#3f34cb] transition'
+                  className='hover:text-primary-500 transition'
                   onClick={() => setMenuOpen(false)}>
                   Why Choose Us
                 </a>
                 <a
                   href='#contact'
-                  className='hover:text-[#3f34cb] transition'
+                  className='hover:text-primary-500 transition'
                   onClick={() => setMenuOpen(false)}>
                   Contact
                 </a>

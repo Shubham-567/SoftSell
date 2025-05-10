@@ -9,7 +9,7 @@ const HeroSection = () => {
 
       {/* Background Gradient */}
       <div className='absolute inset-0'>
-        <div className='absolute bottom-0 right-0 z-[-2] h-full w-full bg-gradient-to-b from-primary-500 via-secondary-100  to-white opacity-90' />
+        <div className='absolute bottom-0 right-0 z-[-2] h-full w-full bg-gradient-to-b from-primary-500 via-secondary-100  to-background-50 opacity-90' />
       </div>
 
       <div className='relative z-10 flex h-full flex-col items-center justify-center px-4'>
