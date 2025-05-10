@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    font-family: "Inter", sans-serif;
+    @apply box-border;
+  }
+
+  :root {
+    /* light theme  */
+
+    /* --text: #091814;
+    --background: #fafefd;
+    --primary: #34dca8;
+    --secondary: #83f5d1;
+    --accent: #45fdc3; 
+    */
+
+    /* Light theme shades */
+    --text-50: #edf8f5;
+    --text-100: #daf1eb;
+    --text-200: #b5e3d7;
+    --text-300: #90d5c3;
+    --text-400: #6bc7ae;
+    --text-500: #46b99a;
+    --text-600: #38947b;
+    --text-700: #2a6f5d;
+    --text-800: #1c4a3e;
+    --text-900: #0e251f;
+    --text-950: #07120f;
+
+    --background-50: #eafbf7;
+    --background-100: #d4f7ee;
+    --background-200: #aaeedd;
+    --background-300: #7fe6cc;
+    --background-400: #55ddbb;
+    --background-500: #2ad5aa;
+    --background-600: #22aa88;
+    --background-700: #198066;
+    --background-800: #115544;
+    --background-900: #082b22;
+    --background-950: #041511;
+
+    --primary-50: #e9fbf6;
+    --primary-100: #d3f8ec;
+    --primary-200: #a8f0d9;
+    --primary-300: #7ce9c6;
+    --primary-400: #51e1b4;
+    --primary-500: #25daa1;
+    --primary-600: #1eae81;
+    --primary-700: #168360;
+    --primary-800: #0f5740;
+    --primary-900: #072c20;
+    --primary-950: #041610;
+
+    --secondary-50: #e7fdf6;
+    --secondary-100: #d0fbed;
+    --secondary-200: #a1f7dc;
+    --secondary-300: #71f4ca;
+    --secondary-400: #42f0b9;
+    --secondary-500: #13eca7;
+    --secondary-600: #0fbd86;
+    --secondary-700: #0b8e64;
+    --secondary-800: #085e43;
+    --secondary-900: #042f21;
+    --secondary-950: #021811;
+
+    --accent-50: #e6fff7;
+    --accent-100: #cdfeef;
+    --accent-200: #9afede;
+    --accent-300: #68fdce;
+    --accent-400: #35fdbe;
+    --accent-500: #03fcad;
+    --accent-600: #02ca8b;
+    --accent-700: #029768;
+    --accent-800: #016545;
+    --accent-900: #013223;
+    --accent-950: #001911;
+  }
+}
+
+@theme {
+  --color-text-50: var(--text-50);
+  --color-text-100: var(--text-100);
+  --color-text-200: var(--text-200);
+  --color-text-300: var(--text-300);
+  --color-text-400: var(--text-400);
+  --color-text-500: var(--text-500);
+  --color-text-600: var(--text-600);
+  --color-text-700: var(--text-700);
+  --color-text-800: var(--text-800);
+  --color-text-900: var(--text-900);
+  --color-text-950: var(--text-950);
+
+  --color-background-50: var(--background-50);
+  --color-background-100: var(--background-100);
+  --color-background-200: var(--background-200);
+  --color-background-300: var(--background-300);
+  --color-background-400: var(--background-400);
+  --color-background-500: var(--background-500);
+  --color-background-600: var(--background-600);
+  --color-background-700: var(--background-700);
+  --color-background-800: var(--background-800);
+  --color-background-900: var(--background-900);
+  --color-background-950: var(--background-950);
+
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-primary-950: var(--primary-950);
+
+  --color-secondary-50: var(--secondary-50);
+  --color-secondary-100: var(--secondary-100);
+  --color-secondary-200: var(--secondary-200);
+  --color-secondary-300: var(--secondary-300);
+  --color-secondary-400: var(--secondary-400);
+  --color-secondary-500: var(--secondary-500);
+  --color-secondary-600: var(--secondary-600);
+  --color-secondary-700: var(--secondary-700);
+  --color-secondary-800: var(--secondary-800);
+  --color-secondary-900: var(--secondary-900);
+  --color-secondary-950: var(--secondary-950);
+
+  --color-accent-50: var(--accent-50);
+  --color-accent-100: var(--accent-100);
+  --color-accent-200: var(--accent-200);
+  --color-accent-300: var(--accent-300);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-accent-700: var(--accent-700);
+  --color-accent-800: var(--accent-800);
+  --color-accent-900: var(--accent-900);
+  --color-accent-950: var(--accent-950);
+}
