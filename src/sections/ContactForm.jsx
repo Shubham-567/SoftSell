@@ -55,7 +55,7 @@ const ContactForm = () => {
 
   return (
     <section id='contact' className='py-12 md:py-24 bg-background-50'>
-      <div className='max-w-7xl mx-auto px-6 2xl:px-0'>
+      <div className='mx-auto px-6 2xl:px-0'>
         <FadeInWhenVisible delay={0.2}>
           <h2 className='text-3xl sm:text-4xl md:text-5xl font-bold text-text-900 text-center mb-3'>
             Get in Touch
@@ -71,9 +71,8 @@ const ContactForm = () => {
         <FadeInWhenVisible delay={0.6}>
           <form
             onSubmit={handleSubmit}
-            className='bg-secondary-50 border border-gray-300 px-8 py-12 rounded-3xl shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8'>
+            className='bg-secondary-50 dark:bg-background-100 border border-gray-300 px-8 py-12 rounded-3xl shadow-xl grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto'>
             {/* left */}
-
             <div className='flex flex-col gap-5'>
               {["name", "email", "company"].map((field) => (
                 <div key={field}>
@@ -94,7 +93,7 @@ const ContactForm = () => {
                   <input
                     id={field}
                     type={field === "email" ? "email" : "text"}
-                    className='w-full bg-background-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                    className='w-full bg-background-50 dark:bg-primary-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                     value={formData[field]}
                     placeholder={
                       field === "name"
@@ -124,7 +123,7 @@ const ContactForm = () => {
                 </div>
                 <select
                   id='license-type'
-                  className='w-full bg-background-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                  className='w-full bg-background-50 dark:bg-primary-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                   value={formData.licenseType}
                   onChange={(e) =>
                     setFormData({ ...formData, licenseType: e.target.value })
@@ -157,7 +156,7 @@ const ContactForm = () => {
                 <textarea
                   id='message'
                   rows={9}
-                  className='text-sm sm:text-base w-full bg-background-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                  className='text-sm sm:text-base w-full bg-background-50 dark:bg-primary-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                   value={formData.message}
                   placeholder='Write your message here...'
                   onChange={(e) =>

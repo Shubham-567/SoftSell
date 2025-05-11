@@ -22,7 +22,7 @@ const HowItWorks = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
           {/* step 1*/}
           <FadeInWhenVisible delay={0.6}>
-            <div className='flex flex-col items-center text-center bg-secondary-50 border border-gray-300 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
+            <div className='flex flex-col items-center text-center bg-primary-50 border border-gray-300 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-6 transition-transform hover:scale-110'>
                 <Upload size={48} />
               </div>
@@ -38,7 +38,7 @@ const HowItWorks = () => {
 
           {/* step 2 */}
           <FadeInWhenVisible delay={0.8}>
-            <div className='flex flex-col items-center text-center bg-secondary-50 border border-gray-300 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
+            <div className='flex flex-col items-center text-center bg-primary-50 border border-gray-300 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-6 transition-transform hover:scale-110'>
                 <DollarSign size={48} />
               </div>
@@ -54,7 +54,7 @@ const HowItWorks = () => {
 
           {/* step 3 */}
           <FadeInWhenVisible delay={1}>
-            <div className='flex flex-col items-center text-center bg-secondary-50 border border-gray-300 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
+            <div className='flex flex-col items-center text-center bg-primary-50 border border-gray-300 text-gray-900 shadow-xl rounded-2xl p-8 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-6 transition-transform hover:scale-110'>
                 <CheckCircle size={48} />
               </div>

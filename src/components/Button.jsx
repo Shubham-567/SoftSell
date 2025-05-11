@@ -12,9 +12,9 @@ const Button = ({
     "px-6 py-3 font-semibold rounded-full transition duration-400 text-sm cursor-pointer hover:-translate-y-1";
 
   const variants = {
-    primary: "bg-primary-600 text-white ",
+    primary: "bg-primary-500 text-white ",
     secondary: "bg-secondary-500 text-white",
-    outline: "ring ring-primary-600 text-primary-600",
+    outline: "ring ring-primary-500 text-primary-500",
   };
 
   const combined = classNames(baseStyles, variants[variant], className);

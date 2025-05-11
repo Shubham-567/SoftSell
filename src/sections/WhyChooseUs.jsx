@@ -4,7 +4,7 @@ import FadeInWhenVisible from "../components/FadeInWhenVisible";
 const WhyChooseUs = () => {
   return (
     <section id='why-us' className='py-10 px-5 md:py-20 bg-background-50'>
-      <div className='bg-secondary-50 max-w-7xl mx-auto px-6 md:px-12 py-12 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-start'>
+      <div className='bg-secondary-50 dark:bg-background-100 max-w-7xl mx-auto px-6 md:px-12 py-12 rounded-3xl grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-12 items-start'>
         {/* left headings*/}
         <div className='text-center lg:text-left'>
           <FadeInWhenVisible delay={0.2}>
@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
           {/* tile 1 */}
           <FadeInWhenVisible delay={0.4}>
-            <div className='p-6 bg-background-50 rounded-2xl border border-gray-300'>
+            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <ShieldCheck size={32} />
               </div>
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
 
           {/* tile 2 */}
           <FadeInWhenVisible delay={0.6}>
-            <div className='p-6 bg-background-50 rounded-2xl border border-gray-300'>
+            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <Users size={32} />
               </div>
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
 
           {/* tile 3 */}
           <FadeInWhenVisible delay={0.8}>
-            <div className='p-6 bg-background-50 rounded-2xl border border-gray-300'>
+            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <Scale size={32} />
               </div>
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
 
           {/* tile 4 */}
           <FadeInWhenVisible delay={1}>
-            <div className='p-6 bg-background-50 rounded-2xl border border-gray-300'>
+            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <Headset size={32} />
               </div>
