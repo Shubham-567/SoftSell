@@ -69,6 +69,7 @@ const Navbar = () => {
 
           {/* Dark mode */}
           <button
+            aria-label='Toggle dark mode'
             onClick={toggleDarkMode}
             className='hidden md:block bg-primary-100 dark:bg-primary-200 text-text-600 p-2 rounded-full hover:bg-primary-200 dark:hover:bg-primary-300 transition-colors duration-200'>
             {darkMode ? (
@@ -91,6 +92,7 @@ const Navbar = () => {
 
             {/* Dark mode */}
             <button
+              aria-label='Toggle dark mode'
               onClick={toggleDarkMode}
               className='bg-transparent text-text-600 dark:text-text-400 p-2 rounded-full hover:bg-neutral-100 dark:hover:bg-neutral-900 hover:text-accent-500 dark:hover:text-accent-500 transition-colors duration-200'>
               {darkMode ? (

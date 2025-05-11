@@ -48,17 +48,20 @@ SoftSell is a responsive, animated landing page built with React and Tailwind CS
 ## Getting Started
 
 1. Clone the repo:
+
    ```bash
    git clone https://github.com/Shubham-567/SoftSell.git
    cd softsell
 
-
    ```
+
 2. Install dependencies:
+
    ```bash
    npm install
 
    ```
+
 3. Run the dev server:
 
    ```bash

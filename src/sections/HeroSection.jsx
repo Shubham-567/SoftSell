@@ -17,11 +17,6 @@ const HeroSection = () => {
 
       {/* Light Mode Background */}
       <div className='absolute inset-0 dark:hidden'>
-        <div className='absolute inset-0 z-[-2] h-full w-full bg-gradient-to-b from-primary-500 via-secondary-100 to-background-50 opacity-90 bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,rgba(255,255,255,0.1),transparent)]' />
-      </div>
-
-      {/* Light Mode Background */}
-      <div className='absolute inset-0 dark:hidden'>
         <div className='absolute inset-0 z-[-2] h-full w-full bg-gradient-to-b from-primary-500 via-secondary-100 to-background-50 opacity-90' />
       </div>
 
