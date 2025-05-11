@@ -20,7 +20,11 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className='absolute top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-50 backdrop-blur shadow-lg px-6 py-3 transition-all'>
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+      className='absolute top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-50 backdrop-blur shadow-lg px-6 py-3'>
       <div className='flex items-center justify-between'>
         {/* logo */}
         <div className='flex justify-start items-center gap-2 text-xl font-bold tracking-tight text-primary-500'>
@@ -96,7 +100,7 @@ const Navbar = () => {
           </AnimatePresence>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
