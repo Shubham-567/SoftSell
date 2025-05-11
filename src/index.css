@@ -22,7 +22,7 @@
   }
 
   :root {
-    /* Main color palet  */
+    /* Main color palette  */
 
     /* --text: #0a0917;
     --background: #f3f2fa;
@@ -132,17 +132,17 @@
     --text-900: #dddbf0;
     --text-950: #eeedf8;
 
-    --background-50: #0a0a10;
-    --background-100: #14141f;
-    --background-200: #27273f;
-    --background-300: #3b3b5e;
-    --background-400: #4f4f7d;
-    --background-500: #62629d;
-    --background-600: #8282b0;
-    --background-700: #a1a1c4;
-    --background-800: #c0c0d8;
-    --background-900: #e0e0eb;
-    --background-950: #efeff5;
+    --background-50: #080514;
+    --background-100: #0f0a29;
+    --background-200: #1f1452;
+    --background-300: #2e1f7a;
+    --background-400: #3d29a3;
+    --background-500: #4c33cc;
+    --background-600: #705cd6;
+    --background-700: #9485e0;
+    --background-800: #b8adeb;
+    --background-900: #dbd6f5;
+    --background-950: #edebfa;
 
     --primary-50: #060514;
     --primary-100: #0c0a29;

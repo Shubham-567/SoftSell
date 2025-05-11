@@ -156,7 +156,7 @@ const ContactForm = () => {
                 <textarea
                   id='message'
                   rows={9}
-                  className='text-sm sm:text-base w-full bg-background-50 dark:bg-primary-50 border border-gray-300 rounded-lg px-4 py-2.5 text-gray-800 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
+                  className='text-sm sm:text-base text-gray-800 w-full bg-background-50 dark:bg-primary-50 border border-gray-300 rounded-lg px-4 py-2.5 resize-none focus:outline-none focus:ring-2 focus:ring-primary-500 transition'
                   value={formData.message}
                   placeholder='Write your message here...'
                   onChange={(e) =>

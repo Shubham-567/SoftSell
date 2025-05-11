@@ -29,8 +29,10 @@ const HeroSection = () => {
         <div className='max-w-3xl text-center'>
           <FadeInWhenVisible delay={0.2}>
             <h1 className='max-w-2xl mx-auto mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-text-900 leading-tight'>
-              Turn Unused Software Into
-              <span className='text-primary-500'> Cash</span>
+              Turn Unused Software Into{" "}
+              <span className='bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent'>
+                Cash
+              </span>
             </h1>
           </FadeInWhenVisible>
 
