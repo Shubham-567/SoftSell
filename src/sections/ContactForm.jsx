@@ -169,7 +169,8 @@ const ContactForm = () => {
                 <Button
                   type='submit'
                   variant='primary'
-                  className='w-full text-base sm:text-lg'>
+                  className='w-full text-base sm:text-lg'
+                  aria-label='send message'>
                   Send Message
                 </Button>
               </div>

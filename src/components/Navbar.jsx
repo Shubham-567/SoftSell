@@ -30,7 +30,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-      className='absolute top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-100 dark:bg-primary-100 backdrop-blur shadow-lg px-6 py-3'>
+      className='absolute top-4 left-1/2 z-50 w-[95%] max-w-7xl -translate-x-1/2 rounded-full bg-background-100 backdrop-blur shadow-lg px-6 py-3'>
       <div className='flex items-center justify-between'>
         {/* logo */}
         <div className='flex justify-start items-center gap-2 text-xl font-bold tracking-tight text-primary-500'>
@@ -61,7 +61,9 @@ const Navbar = () => {
           {/* CTA - desktop */}
           <div className='hidden md:block'>
             <a href='#contact'>
-              <Button variant='primary'>Sell Now</Button>
+              <Button variant='primary' aria-label='sell now'>
+                Sell Now
+              </Button>
             </a>
           </div>
 
@@ -131,7 +133,10 @@ const Navbar = () => {
                 </a>
                 <div className='pt-2'>
                   <a href='#contact' onClick={() => setMenuOpen(false)}>
-                    <Button variant='primary' className='w-full'>
+                    <Button
+                      variant='primary'
+                      className='w-full'
+                      aria-label='sell now'>
                       Sell Now
                     </Button>
                   </a>

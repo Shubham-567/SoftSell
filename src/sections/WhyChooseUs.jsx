@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-6'>
           {/* tile 1 */}
           <FadeInWhenVisible delay={0.4}>
-            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
+            <div className='p-6 bg-background-100 dark:bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <ShieldCheck size={32} />
               </div>
@@ -42,7 +42,7 @@ const WhyChooseUs = () => {
 
           {/* tile 2 */}
           <FadeInWhenVisible delay={0.6}>
-            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
+            <div className='p-6 bg-background-100 dark:bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <Users size={32} />
               </div>
@@ -57,7 +57,7 @@ const WhyChooseUs = () => {
 
           {/* tile 3 */}
           <FadeInWhenVisible delay={0.8}>
-            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
+            <div className='p-6 bg-background-100 dark:bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <Scale size={32} />
               </div>
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
 
           {/* tile 4 */}
           <FadeInWhenVisible delay={1}>
-            <div className='p-6 bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
+            <div className='p-6 bg-background-100 dark:bg-primary-50 text-text-950 rounded-2xl border border-gray-300 transform duration-400 transition-transform hover:scale-105'>
               <div className='text-accent-500 mb-4'>
                 <Headset size={32} />
               </div>

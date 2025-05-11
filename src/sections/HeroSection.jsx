@@ -46,8 +46,12 @@ const HeroSection = () => {
 
           <FadeInWhenVisible delay={0.6}>
             <div className='flex flex-wrap justify-center gap-4'>
-              <Button variant='primary'>Sell My Licenses</Button>
-              <Button variant='outline'>Learn More</Button>
+              <Button variant='primary' aria-label='sell my licenses'>
+                Sell My Licenses
+              </Button>
+              <Button variant='outline' aria-label='learn more'>
+                Learn More
+              </Button>
             </div>
           </FadeInWhenVisible>
         </div>
