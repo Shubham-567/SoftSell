@@ -10,7 +10,7 @@ const Button = ({
   ariaLabel = "",
 }) => {
   const baseStyles =
-    "px-6 py-3 font-semibold rounded-full transition duration-400 text-sm cursor-pointer hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary-500";
+    "px-6 py-3 font-semibold rounded-full transition duration-400 text-sm cursor-pointer shadow-lg hover:shadow-xl hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary-500";
 
   const variants = {
     primary: "bg-primary-500 text-white ",

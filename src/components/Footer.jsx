@@ -35,6 +35,7 @@ const Footer = () => {
                 <li>
                   <a
                     href='#how-it-works'
+                    aria-label='how it works'
                     className='hover:text-text-500 transition-colors'>
                     How It Works
                   </a>
@@ -42,6 +43,7 @@ const Footer = () => {
                 <li>
                   <a
                     href='#why-us'
+                    aria-label='why choose us'
                     className='hover:text-text-500 transition-colors'>
                     Why Choose Us
                   </a>
@@ -49,6 +51,7 @@ const Footer = () => {
                 <li>
                   <a
                     href='#contact'
+                    aria-label='contact'
                     className='hover:text-text-500 transition-colors'>
                     Contact
                   </a>
@@ -62,10 +65,16 @@ const Footer = () => {
                 Follow Us
               </h4>
               <div className='flex gap-4'>
-                {[Facebook, Twitter, Linkedin, Mail].map((Icon, idx) => (
+                {[
+                  { Icon: Facebook, label: "facebook" },
+                  { Icon: Twitter, label: "twitter x" },
+                  { Icon: Linkedin, label: "linkedin" },
+                  { Icon: Mail, label: "email" },
+                ].map(({ Icon, label }, idx) => (
                   <a
                     key={idx}
                     href='#'
+                    aria-label={label}
                     className='p-2 bg-secondary-100 border border-gray-300 dark:border-none rounded-full hover:bg-accent-500 hover:text-white transition-colors'>
                     <Icon size={20} />
                   </a>

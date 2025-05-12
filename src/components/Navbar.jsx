@@ -117,18 +117,21 @@ const Navbar = () => {
                 className='absolute right-0 mt-3 w-56 rounded-xl bg-background-50 shadow-lg p-4 flex flex-col space-y-3 text-sm font-medium text-gray-600 z-50'>
                 <a
                   href='#how-it-works'
+                  aria-label='how it works'
                   className='font-semibold hover:text-primary-600 transition'
                   onClick={() => setMenuOpen(false)}>
                   How It Works
                 </a>
                 <a
                   href='#why-us'
+                  aria-label='why choose us'
                   className='font-semibold hover:text-primary-600 transition'
                   onClick={() => setMenuOpen(false)}>
                   Why Choose Us
                 </a>
                 <a
                   href='#contact'
+                  aria-label='contact'
                   className='font-semibold hover:text-primary-600 transition'
                   onClick={() => setMenuOpen(false)}>
                   Contact

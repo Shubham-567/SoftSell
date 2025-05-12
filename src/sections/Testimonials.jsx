@@ -22,7 +22,7 @@ const Testimonials = () => {
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
           <FadeInWhenVisible delay={0.8}>
-            <div className='bg-secondary-50 dark:bg-primary-100 p-8 rounded-2xl shadow-sm border border-gray-300 hover:shadow-lg transition duration-400 text-left hover:scale-102'>
+            <div className='bg-secondary-50 dark:bg-primary-100 p-8 rounded-2xl border border-gray-300 shadow-lg hover:shadow-xl transition duration-400 text-left hover:scale-102'>
               <div className='mb-4 text-accent-500'>
                 <Quote size={32} />
               </div>
@@ -45,7 +45,7 @@ const Testimonials = () => {
           </FadeInWhenVisible>
 
           <FadeInWhenVisible delay={1}>
-            <div className='bg-secondary-50 dark:bg-primary-100 p-8 rounded-2xl shadow-sm border border-gray-300 hover:shadow-md transition duration-300 text-left hover:scale-102'>
+            <div className='bg-secondary-50 dark:bg-primary-100 p-8 rounded-2xl border border-gray-300 shadow-lg hover:shadow-xl transition duration-300 text-left hover:scale-102'>
               <div className='mb-4 text-accent-500'>
                 <Quote size={32} />
               </div>
